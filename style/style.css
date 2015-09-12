@@ -47,7 +47,7 @@ header h2 img {
 	padding: 2rem 0;
 }
 
-.data, .content, .card, .sec-info, .card-conf {
+.data, .content, .card, .sec-info, .card-conf, .margin {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -94,6 +94,8 @@ header h2 img {
 
 .sec-info div {
 	flex: 1;
+	padding: 0;
+	margin: 0;
 }
 
 .sec-info p {
@@ -106,7 +108,6 @@ header h2 img {
 
 .card-conf {
 	font-size: 0.8rem;
-	border: 1px solid transparent;
 }
 
 .card-conf p {
@@ -127,4 +128,30 @@ header h2 img {
 
 #weather-now {
 	text-transform: capitalize;
+}
+
+footer {
+	margin: 0;
+	text-align: center;
+	color: #FFFFFF;
+	background-color: rgba(0, 0, 0, 0.8);
+	font-size: 0.8rem;
+}
+
+footer .margin {
+	width: 80%;
+	margin: 0 auto;
+	justify-content: flex-end;
+}
+
+footer p {
+	margin: 0;
+	padding: 0.5rem 1rem;
+}
+
+footer a {
+	text-decoration: none;
+	color: #FFFFFF;
+	font-weight: bolder;
+	font-variant: small-caps;
 }

@@ -77,18 +77,19 @@ $(document).ready(function() {
 	var showData = function(lat, lon) {
 		$.get("http://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon, function(data) {
 			console.log("http://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon);
-			temp.fahrenheit = Math.round((data.main.temp * 9 / 5 - 459.67) * 100) / 100;
-			temp.celsius = Math.round((data.main.temp - 273.15) * 100) / 100;
-			temp_min.fahrenheit = Math.round((data.main.temp_min * 9 / 5 - 459.67) * 100) / 100;
-			temp_min.celsius = Math.round((data.main.temp_min - 273.15) * 100) / 100;
-			temp_max.fahrenheit = Math.round((data.main.temp_max * 9 / 5 - 459.67) * 100) / 100;
-			temp_max.celsius = Math.round((data.main.temp_max - 273.15) * 100) / 100;
+			temp.fahrenheit = Math.round((data.main.temp * 9 / 5 - 459.67) * 10) / 10;
+			temp.celsius = Math.round((data.main.temp - 273.15) * 10) / 10;
+			temp_min.fahrenheit = Math.round((data.main.temp_min * 9 / 5 - 459.67) * 10) / 10;
+			temp_min.celsius = Math.round((data.main.temp_min - 273.15) * 10) / 10;
+			temp_max.fahrenheit = Math.round((data.main.temp_max * 9 / 5 - 459.67) * 10) / 10;
+			temp_max.celsius = Math.round((data.main.temp_max - 273.15) * 10) / 10;
 			wind_speed.mps = data.wind.speed;
 			wind_speed.mph = Math.round((data.wind.speed * 3600 / 1609.344) * 100) / 100;
 
 			$("header h2 span").text(data.name + ", " + data.sys.country);
 			$("#weather-now").text(data.weather[0].description);
 			$("#humidity").text(data.main.humidity);
+			$("#cloud-perc").text(data.clouds.all);
 			$("#pressure").text(data.main.pressure);
 			$("#weather-icon").attr("src", "http://openweathermap.org/img/w/" + data.weather[0].icon + ".png");
 
