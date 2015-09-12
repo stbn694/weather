@@ -22,15 +22,15 @@
 				<div class="card temp">
 					<h3>Temperature</h3>
 					<div class="content">
-						<p><span id="temp-now">-</span> º<span class="temp-units">F</span></p>
+						<p><span id="temp-now">-</span> <span class="temp-units units"></span></p>
 						<div class="sec-info">
 							<div>
 								<p class="sec-title">Min</p>
-								<p><span id="temp-min">-</span> º<span class="temp-units">F</span></p>
+								<p><span id="temp-min">-</span> <span class="temp-units"></span></p>
 							</div>
 							<div>
 								<p class="sec-title">Max</p>
-								<p><span id="temp-max">-</span> º<span class="temp-units">F</span></p>
+								<p><span id="temp-max">-</span> <span class="temp-units"></span></p>
 							</div>
 						</div>
 					</div>
@@ -42,30 +42,30 @@
 				<div class="card weather">
 					<h3>Conditions</h3>
 					<div class="content">
-						<figure><img src="#" id="weather-icon"></figure>
+						<figure><img  id="weather-icon"></figure>
 						<p id="weather-now">-</p>
 					</div>
 				</div>
 				<div class="card hum">
 					<h3>Humidity</h3>
 					<div class="content">
-						<p><span id="humidity">-</span> %</p>
+						<p><span id="humidity">-</span> <span class="units">%</span></p>
 					</div>
 				</div>
 				<div class="card press">
 					<h3>Pressure</h3>
 					<div class="content">
-						<p><span id="pressure">-</span> mb</p>
+						<p><span id="pressure">-</span> <span class="units">hPa</span></p>
 					</div>
 				</div>
 				<div class="card wind">
 					<h3>Wind</h3>
 					<div class="content">
-						<p><span id="wind-speed">-</span> <span id="speed-units">mph</span> <span id="wind-dir">NW</span></p>
+						<p><span id="wind-speed"></span> <span id="speed-units" class="units">-</span> <span id="wind-dir"></span></p>
 					</div>
 					<div class="card-conf">
-						<p id="kph" class="inactive">Kilometers</p>
-						<p id="mph" class="active">Miles</p>
+						<p id="mps" class="active">Meters</p>
+						<p id="mph" class="inactive">Miles</p>
 					</div>
 				</div>
 			</div>
