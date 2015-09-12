@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="style/style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script type="text/javascript" src="https://platform.twitter.com/widgets.js"></script>
+		<script type="text/javascript" src="scripts/script.js"></script>
+		<title>Local weather</title>
+		<meta name="author" content="Esteban Gerpe">
+	</head>
+	<body>
+		<header>
+			<h1>Local weather</h1>
+			<h2><img src="http://envaultcorp.com/images/gps-icon2.png"> <span>Location</span></h2>
+		</header>
+		<div class="main">
+			<div class="data">
+				<div class="card temp">
+					<h3>Temperature</h3>
+					<div class="content">
+						<p><span id="temp-now">-</span> º<span class="temp-units">F</span></p>
+						<div class="sec-info">
+							<div>
+								<p class="sec-title">Min</p>
+								<p><span id="temp-min">-</span> º<span class="temp-units">F</span></p>
+							</div>
+							<div>
+								<p class="sec-title">Max</p>
+								<p><span id="temp-max">-</span> º<span class="temp-units">F</span></p>
+							</div>
+						</div>
+					</div>
+					<div class="card-conf">
+						<p id="celsius" class="inactive">Celsius</p>
+						<p id="fahrenheit" class="active">Fahrenheit</p>
+					</div>
+				</div>
+				<div class="card weather">
+					<h3>Conditions</h3>
+					<div class="content">
+						<figure><img src="#" id="weather-icon"></figure>
+						<p id="weather-now">-</p>
+					</div>
+				</div>
+				<div class="card hum">
+					<h3>Humidity</h3>
+					<div class="content">
+						<p><span id="humidity">-</span> %</p>
+					</div>
+				</div>
+				<div class="card press">
+					<h3>Pressure</h3>
+					<div class="content">
+						<p><span id="pressure">-</span> mb</p>
+					</div>
+				</div>
+				<div class="card wind">
+					<h3>Wind</h3>
+					<div class="content">
+						<p><span id="wind-speed">-</span> <span id="speed-units">mph</span> <span id="wind-dir">NW</span></p>
+					</div>
+					<div class="card-conf">
+						<p id="kph" class="inactive">Kilometers</p>
+						<p id="mph" class="active">Miles</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
